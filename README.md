@@ -1,11 +1,18 @@
 # playmaker
 
 ## Briefly
-Uploads specified Spotify albums as playlists to your Youtube music account.
+Uploads specified Spotify playlists as playlists to your Youtube music account.
 
-Is an Azure function app (python), which using a timer trigger function to publish Spotify albums specified in \playmakerpy\spotifyalbums.py to your Youtube music account specified by the channel_id in local.settings.json (private/specify your own).
+Is an Azure function app (python), which using a timer trigger function to publish Spotify playlists specified in \playmakerpy\spotifyalbums.py to your Youtube music account specified by the channel_id in local.settings.json (private/specify your own).
 
-When published to the azure cloud (as a function app) the function "timer" runs everyday at 5 am (UTC) specified by the CRON expression in  \timer\function.json. This is to ensure your albums are updated automactically daily to stay up to date.
+When published to the azure cloud (as a function app) the function "timer" runs everyday at 5 am (UTC) specified by the CRON expression in  \timer\function.json. This is to ensure your playlists are updated automactically daily to stay up to date.
+
+## How to add more playlists / remove the existing ones
+1. Navigate to \playmakerpy\spotifyalbums.py
+2. Edit and change the albumIDs dict {"name": "id"} 
+   - You can set the name to an arbitrary value, but I just chose the official names to easier distinct them in ytm
+   - the ids' have to be correct and can be found through their web player like this, by click on playlists and capturing the id from the url: <img src="/images/spotify_url_album.png"> 
+   - alternatively the spotify api can also be used
 
 ## Requirements for local use
 - Python version 3.8
