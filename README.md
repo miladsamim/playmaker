@@ -20,7 +20,7 @@ When published to the azure cloud (as a function app) the function "timer" runs 
 - Azure tools (easier to follow here: [link](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function-azure-cli?tabs=bash%2Cbrowser&pivots=programming-language-python))
   - Azure CLI 2.4 or later
   - Azure functions core tools 3.x
-- Azure storage simulator [get here] (https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator) (needed to run Timer trigger functions locally)
+- Azure storage simulator [get here](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator) (needed to run Timer trigger functions locally)
 
 ## How to run locally
 1. Make sure you the local.settings.json file is filled with proper values
