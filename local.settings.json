@@ -1,0 +1,11 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "spotify_client_id": "<your spotify client id, get at developer.spotify.com>",
+    "spotify_client_secret": "<your spotify client secret, get at developer.spotify.com>",
+    "yt_channel_id": "<your yt music channel id, get from the url, when browsing to your yt music channel>",
+    "yt_cookie": "<refer to guide here: https://ytmusicapi.readthedocs.io/en/latest/setup.html>"
+  }
+}
