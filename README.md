@@ -5,7 +5,7 @@ Uploads specified Spotify albums as playlists to your Youtube music account.
 
 Is an Azure function app (python), which using a timer trigger function to publish Spotify albums specified in \playmakerpy\spotifyalbums.py to your Youtube music account specified by the channel_id in local.settings.json (private/specify your own).
 
-When published to the azure cloud (as a function app) the function "timer" runs everyday at 5 am (UTC) specified by the CRON expression in  \timer\function.json.
+When published to the azure cloud (as a function app) the function "timer" runs everyday at 5 am (UTC) specified by the CRON expression in  \timer\function.json. This is to ensure your albums are updated automactically daily to stay up to date.
 
 ## Requirements for local use
 - Python version 3.8
