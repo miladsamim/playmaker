@@ -35,7 +35,7 @@ When published to the azure cloud (as a function app) the function "timer" runs 
 4. Execute command ```func start``` to start the function app
 5. Instead of waiting for it to run at 5 am (UTC) as specified by the CRON expression, call it with this curl command ```curl -X Post -H "Content-Type:application/json" --data {} http://localhost:7071/admin/functions/timer -v```
 
-## How to publish to azure
+## How to publish to Azure
 1. Create a function app python 3.8 in azure (through portal.azure.com or az cli)
 2. When deploying you have to ensure you use the correct storage connection string (refer to this [guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#local-settings-file))
 3. (navigate to function app root, have to be signed in ```az login```) Publish with ```func azure functionapp publish <the azure function app name> --publish-local-settings -i --overwrite-settings -y``` (publish local settings is needed store all our yt and Spotify credentials in the azure functionapp securely)
