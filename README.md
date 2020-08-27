@@ -15,7 +15,7 @@ When published to the azure cloud (as a function app) the function "timer" runs 
    - alternatively the spotify api can also be used
 
 ## Requirements for local use
-- Python version 3.8
+- Python version 3.8.x
 - Python modules in requirements.txt (recommended to make a virtual python environment)
 - Azure tools (easier to follow here: [link](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function-azure-cli?tabs=bash%2Cbrowser&pivots=programming-language-python))
   - Azure CLI 2.4 or later
