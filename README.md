@@ -11,7 +11,7 @@ When published to the azure cloud (as a function app) the function "timer" runs 
 1. Navigate to \playmakerpy\spotifyalbums.py
 2. Edit and change the albumIDs dict {"name": "id"} 
    - You can set the name to an arbitrary value, but I just chose the official names to easier distinct them in ytm
-   - the ids' have to be correct and can be found through their web player like this, by click on playlists and capturing the id from the url: <img src="/images/spotify_url_album.png"> 
+   - the ids' have to be correct and can be found through their web player like this, by clicking on a playlist (browsing to it) and capturing the id from the url: <img src="/images/spotify_url_album.png"> 
    - alternatively the spotify api can also be used
 
 ## Requirements for local use
